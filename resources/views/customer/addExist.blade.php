@@ -23,6 +23,7 @@
                           @endforeach
                       </select>
                     </div>
+                    
                     @include('layouts/vehicleDataForm')
 
                 <button class="btn btn-success mt-2" type="submit">
