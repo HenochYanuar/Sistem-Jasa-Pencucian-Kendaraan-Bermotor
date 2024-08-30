@@ -16,6 +16,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome-free/css/all.min.css') }}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('assets/dist/css/adminlte.min.css') }}">
+
+  <link rel="shortcut icon" href="/assets/dist/img/download.png"/>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -34,8 +36,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <img src="dist/img/AdminLTELogo.png" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <a href="#" class="brand-link">
+      <img src="/assets/dist/img/download.png" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light center">PT. CRM</span>
     </a>
 
@@ -44,7 +46,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="#" class="img-circle elevation-2" alt="">
+          <img src="/assets/dist/img/AdminLTELogo.png" class="img-circle elevation-2" alt="">
         </div>
         <div class="info">
           <a href="#" class="d-block">Admin Pusat</a>
@@ -58,7 +60,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                with font-awesome or any other icon font library -->
           <li class="nav-item">
             <a href="{{ route('dashboard') }}" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fa-home"></i>
               <p>
                 Dashboard
               </p>
@@ -66,7 +68,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </li>
           <li class="nav-item">
             <a href="{{ route('customers.index') }}" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fa-user"></i>
               <p>
                 Customer Data 
               </p>
@@ -74,7 +76,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </li>
           <li class="nav-item">
             <a href="{{ route('transactions.index') }}" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fa-book"></i>
               <p>
                 Transaction History
               </p>

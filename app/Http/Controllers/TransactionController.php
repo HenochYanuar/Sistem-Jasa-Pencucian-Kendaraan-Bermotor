@@ -11,7 +11,7 @@ class TransactionController extends Controller
 {
 
     /*
-        Fungsi ini berfungsi untuk mengambil semua data pada table transactions
+        Fungsi ini berfungsi untuk mengambil semua data pada table transactions secara descending
         dengan menggunakan pagination dari library dataTables berdasarkan search
         yang memungkinkan untuk mencari data transaction berdasarkan kata kunci yang sama dengan
         field date_transaction, price, dan name padatable customers yang diinputkan 
@@ -28,7 +28,9 @@ class TransactionController extends Controller
                     ->orWhereHas('customer', function ($query) use ($searchTerm) {
                         $query->where('name', 'like', $searchTerm);
                     });
-            })->paginate(10);
+            })
+            ->orderBy('created_at', 'desc')
+            ->paginate(10);
         return view('transaction/index', [
             'transactions' => $transactions
         ]);

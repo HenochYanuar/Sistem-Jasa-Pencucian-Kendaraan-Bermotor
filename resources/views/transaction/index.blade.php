@@ -46,7 +46,7 @@
                                     @csrf
                                     @method('DELETE')
                                     <a class="btn btn-info" href="{{ route('transactions.detail', [$transaction->id]) }}">
-                                        <i class="fa fa-pencil-alt"></i> Detail
+                                        <i class="fa fa-eye"></i> Detail
                                     </a>
                                     |
                                     <button class="btn btn-danger" href="{{ route('transactions.delete', [$transaction->id]) }}"
