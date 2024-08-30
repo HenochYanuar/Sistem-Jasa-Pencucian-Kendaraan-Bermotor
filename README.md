@@ -18,13 +18,13 @@ Setelah repository diclone atau didownload, ikuti langkah-langkah berikut untuk 
    Clone repository ini ke dalam direktori lokal:
 
    ```bash
-   git clone https://github.com/username/repository-name.git
+   git clone https://github.com/HenochYanuar/Sistem-Jasa-Pencucian-Kendaraan-Bermotor
    ```
 
    Masuk ke dalam direktori project:
 
    ```bash
-   cd repository-name
+   cd "Sistem Jasa Pencucian Kendaraan Bermotor"
    ```
 
 2. **Install Dependencies**
